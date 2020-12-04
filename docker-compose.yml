@@ -4,9 +4,8 @@ services:
     build: .
     environment:
       - NODE_ENV=developement
-    container_name: sails
     ports:
-      - "1337:1337"
+      - 1337:1337
     command: "npm run dev"
     volumes:
       - ./:/app
