@@ -19,7 +19,7 @@ module.exports.policies = {
 	
 	UserController: {
 		'*': true
-	}
+	},
 	
 	// By default, require requests to come from a logged-in user
 	// (runs the policy in api/policies/isLoggedIn.js)
