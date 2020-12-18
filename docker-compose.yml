@@ -4,7 +4,7 @@ services:
     build: .
     environment:
       - NODE_ENV=developement
-      - MYSQL_DATABASE_URL=mysql://DB_user:DB_password@mysql:3306/DB_resizer
+      - DATABASE_URL=mysql://DB_user:DB_password@mysql:3306/DB_resizer
     ports:
       - 1337:1337
     command: "npm run dev"
