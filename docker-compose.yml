@@ -5,6 +5,7 @@ services:
     environment:
       - NODE_ENV=developement
       - DATABASE_URL=mysql://DB_user:DB_password@mysql:3306/DB_resizer
+      - REDIS_URL=redis://redis:6379
     ports:
       - 1337:1337
     command: "npm run dev"
@@ -19,3 +20,5 @@ services:
       - MYSQL_ROOT_PASSWORD=my-secret-pw
     volumes:
       - ./_docker/mysql:/var/lib/mysql
+  redis:
+    image: redis
