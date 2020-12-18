@@ -18,6 +18,4 @@ services:
       - MYSQL_PASSWORD=DB_password
       - MYSQL_ROOT_PASSWORD=my-secret-pw
     volumes:
-      - db:/var/lib/mysql
-volumes:
-  db:
+      - ./_docker/mysql:/var/lib/mysql
