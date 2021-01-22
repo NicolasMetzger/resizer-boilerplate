@@ -6,6 +6,14 @@
       <% } else { %>
         <p> Not logged in </p>
       <% } %>
+	  
+	  <br/>
+	  <p>Upload image</p>
+	  <form action="/upload" enctype="multipart/form-data" method="POST">
+        <input type="file" name="name" id="id">
+        <button>Upload</button>
+      </form>
+	  
     </div>
   </div>
 </div>
